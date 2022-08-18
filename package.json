@@ -1,12 +1,12 @@
 {
   "title": "html2canvas",
-  "name": "html2canvas",
+  "name": "@plantiga/html2canvas",
   "description": "Screenshots with JavaScript",
   "main": "dist/html2canvas.js",
   "module": "dist/html2canvas.esm.js",
   "typings": "dist/types/index.d.ts",
   "browser": "dist/html2canvas.js",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": {
     "name": "Niklas von Hertzen",
     "email": "niklasvh@gmail.com",
@@ -113,7 +113,7 @@
     "karma": "ts-node tests/karma",
     "watch": "rollup -c rollup.config.ts -w",
     "watch:unittest": "mocha --require ts-node/register --watch-extensions ts -w src/**/__tests__/*.ts",
-    "start": "ts-node tests/server --port=8080 --cors=8081"
+    "start": "ts-node tests/server --port=8090 --cors=8091"
   },
   "homepage": "https://html2canvas.hertzen.com",
   "license": "MIT",
