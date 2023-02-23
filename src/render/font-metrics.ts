@@ -34,15 +34,20 @@ export class FontMetrics {
         img.src = SMALL_IMAGE;
         img.width = 1;
         img.height = 1;
+        img.style.width = '1px';
+        img.style.height = '1px';
 
         img.style.margin = '0';
         img.style.padding = '0';
         img.style.verticalAlign = 'baseline';
+        img.style.display = 'inline-block';
 
         span.style.fontFamily = fontFamily;
         span.style.fontSize = fontSize;
         span.style.margin = '0';
         span.style.padding = '0';
+        span.style.lineHeight = 'normal';
+        span.style.height = 'auto';
 
         span.appendChild(this._document.createTextNode(SAMPLE_TEXT));
         container.appendChild(span);
